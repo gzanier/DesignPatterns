@@ -1,6 +1,7 @@
 import builder.Address;
 import builder.Item;
 import builder.ShoppingCart;
+import singleton.Singleton;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,8 +13,13 @@ public class Main {
 
 
 
-
-        /*
+        Singleton singleton = Singleton.newInstance();
+        singleton.logINFO("log1");
+        Singleton singleton2 = Singleton.newInstance();
+        singleton2.logINFO("log2");
+        Singleton singleton3 = Singleton.newInstance();
+        singleton3.logINFO("log3");
+        /*Main builder
 
       /*  Item item1 = new Item(1,10,"maglia","maglia gialla");
         Item item2 = new Item(2,10,"maglia","maglia gialla");
